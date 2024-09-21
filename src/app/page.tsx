@@ -1,10 +1,16 @@
-import { Link } from "@/components/Link";
-import { Main } from "@/components/Main";
+import { PageContents } from "@/components/PageContents";
+import { Title } from "@/components/Title";
 
 export default function Home() {
   return (
-    <Main>
-      <h1>Home</h1>
-    </Main>
+    <>
+      <Title>Home</Title>
+      <PageContents>
+        <p>App Router Playgroundへようこそ</p>
+        <p>
+          01 - 04 までページを作成しています。自由にコードを書いてみましょう。
+        </p>
+      </PageContents>
+    </>
   );
 }

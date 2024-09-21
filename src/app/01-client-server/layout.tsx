@@ -1,7 +1,11 @@
+import { PageContents } from "@/components/PageContents";
+import { Title } from "@/components/Title";
 import type { Metadata } from "next";
 
+const TITLE = "01-client-server";
+
 export const metadata: Metadata = {
-  title: "01-client-server",
+  title: TITLE,
   description: "...",
 };
 
@@ -10,5 +14,10 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <>{children}</>;
+  return (
+    <>
+      <Title>{TITLE}</Title>
+      <PageContents>{children}</PageContents>
+    </>
+  );
 }

@@ -1,9 +1,10 @@
 import { Main } from "@/components/Main";
+import { Title } from "@/components/Title";
 
 export default function Page() {
   return (
-    <Main>
-      <h1>cache</h1>
-    </Main>
+    <>
+      <Title>cache</Title>
+    </>
   );
 }

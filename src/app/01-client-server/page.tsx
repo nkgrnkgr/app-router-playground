@@ -1,9 +1,12 @@
 import { Main } from "@/components/Main";
+import { Title } from "@/components/Title";
+import { Server } from "./_components/server";
 
 export default function Page() {
   return (
-    <Main>
-      <h1>Client Server</h1>
-    </Main>
+    <>
+      <Title>Client Server</Title>
+      <Server />
+    </>
   );
 }
