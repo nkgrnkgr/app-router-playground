@@ -7,7 +7,7 @@ export default function Home() {
       <h1>Home</h1>
       <ul>
         <li>
-          <Link href="client-server">client-server</Link>
+          <Link href="01-client-server">01-client-server</Link>
         </li>
       </ul>
     </Main>
