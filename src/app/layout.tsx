@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "App router playground",
@@ -13,8 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body
-      >
+      <body>
+        <Header />
         {children}
       </body>
     </html>
