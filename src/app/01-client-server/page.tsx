@@ -5,8 +5,9 @@ import { Server } from "./_components/server";
 export default function Page() {
   return (
     <Stack>
-      <Server />
-      <Client />
+      <Server>
+        <Client />
+      </Server>
     </Stack>
   );
 }
