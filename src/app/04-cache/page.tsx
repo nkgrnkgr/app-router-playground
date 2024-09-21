@@ -1,10 +1,3 @@
-import { Main } from "@/components/Main";
-import { Title } from "@/components/Title";
-
 export default function Page() {
-  return (
-    <>
-      <Title>cache</Title>
-    </>
-  );
+  return <>zzz</>;
 }
