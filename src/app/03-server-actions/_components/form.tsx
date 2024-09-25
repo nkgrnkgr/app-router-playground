@@ -13,12 +13,12 @@ export function Form() {
 
   return (
     <form className="flex flex-col gap-4 w-96" action={handleSubmit}>
-      <Label>
-        名前：
+      <Label className="flex flex-col gap-2">
+        <span>名前：</span>
         <Input name="name" />
       </Label>
-      <Label>
-        年齢：
+      <Label className="flex flex-col gap-2">
+        <span>年齢：</span>
         <Input name="age" />
       </Label>
       <Button type="submit">送信</Button>
