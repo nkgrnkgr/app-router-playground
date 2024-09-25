@@ -1,3 +1,5 @@
+import { Form } from "./_components/form";
+
 export default function Page() {
-  return <>yyy</>;
+  return <Form />;
 }
