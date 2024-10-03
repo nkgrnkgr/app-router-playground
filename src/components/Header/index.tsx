@@ -11,19 +11,19 @@ const LINKS = [
     label: "Home",
   },
   {
-    href: "01-client-server",
+    href: "/01-client-server",
     label: "01-client-server",
   },
   {
-    href: "02-routing",
+    href: "/02-routing",
     label: "02-routing",
   },
   {
-    href: "03-server-actions",
+    href: "/03-server-actions",
     label: "03-server-actions",
   },
   {
-    href: "04-cache",
+    href: "/04-cache",
     label: "04-cache",
   },
 ];
