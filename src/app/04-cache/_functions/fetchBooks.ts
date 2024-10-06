@@ -8,12 +8,6 @@ export type Book = {
 
 const createSeed = () => Math.floor(Math.random() * 9) + 1;
 
-// https://nextjs.org/docs/app/building-your-application/caching
-// Request Memoization
-// Next.jsが拡張している fetchAPI は、リクエストをキャッシュする
-
-//
-
 const createBooks = (): Book[] => {
   const seed = createSeed();
   return [

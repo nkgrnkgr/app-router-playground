@@ -1,5 +1,6 @@
 import { SubTittle } from "@/components/SubTitle";
 import { TodoInitialLoad } from "./todoInitialLoad";
+import { TodoInitialLoadNoStore } from "./todoInitialLoadNoStore";
 import { TodoOnClickLoad } from "./todoOnClickLoad";
 
 export async function TodoList() {
@@ -22,8 +23,8 @@ export async function TodoList() {
           <TodoInitialLoad id={1} />
         </li>
         <li>
-          <span>4回目</span>
-          <TodoInitialLoad id={1} />
+          <span>3回目</span>
+          <TodoInitialLoadNoStore id={1} />
         </li>
       </ul>
     </>

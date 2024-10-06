@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { useCallback, useState } from "react";
-import { type Todo, fetchTodo } from "../_functions/fetchTodo";
+import { fetchTodo } from "../_functions/fetchTodo";
 
 type Props = {
   id: number;
