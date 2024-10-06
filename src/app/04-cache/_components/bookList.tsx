@@ -2,7 +2,7 @@ import { SubTittle } from "@/components/SubTitle";
 import { fetchBooks } from "../_functions/fetchBooks";
 import { BookComponent } from "./book";
 
-export async function List() {
+export async function BookList() {
   const books = await fetchBooks();
 
   return (
