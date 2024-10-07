@@ -12,6 +12,7 @@ export function TodoOnClickLoad({ id }: Props) {
   const [todo, setTodo] = useState<Todo | null>();
 
   const handleClick = useCallback(() => {
+    // CORS違反エラーが発生する
     fetchTodo(id).then((data) => {
       setTodo(data);
     });
