@@ -17,7 +17,7 @@ export async function TodoList() {
           <TodoInitialLoad id={1} />
         </li>
         <li>
-          <span>3回目</span>
+          <span>3回目(fetch no-store)</span>
           <TodoInitialLoadNoStore id={1} />
         </li>
         <li>
