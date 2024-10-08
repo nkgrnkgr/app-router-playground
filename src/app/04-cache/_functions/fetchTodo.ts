@@ -11,7 +11,10 @@ export type Todo = {
 // Next.jsが拡張している fetchAPI は、リクエストをキャッシュする
 //
 export const fetchTodo = async (id: number) => {
-  const response = await fetch(`http://localhost:3001/todos/${id}`);
+  const response = await fetch(`http://localhost:3001/todos/${id}`, {
+    // 5秒でRevalidateする
+    next: { revalidate: 5 },
+  });
   const data = await response.json();
   return data as Todo;
 };
