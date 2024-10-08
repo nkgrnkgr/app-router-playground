@@ -5,7 +5,7 @@ const PORT = 3001;
 
 // サーバーを作成
 const server = http.createServer(async (req, res) => {
-  console.log("called");
+  console.log("called request");
   // URLのパス部分を解析
   const parsedUrl = url.parse(req.url, true);
   const path = parsedUrl.pathname;
@@ -19,7 +19,14 @@ const server = http.createServer(async (req, res) => {
       `https://jsonplaceholder.typicode.com/todos/${todoId}`,
     );
     const a = await r.json();
-    res.end(JSON.stringify(a));
+
+    const random = Math.floor(Math.random() * 9) + 1;
+    res.end(
+      JSON.stringify({
+        ...a,
+        random,
+      }),
+    );
     return;
     // res.end(JSON.stringify(a));
   }
@@ -29,7 +36,7 @@ const server = http.createServer(async (req, res) => {
     JSON.stringify({
       userId: 1,
       id: 1,
-      title: "delectus aut autem",
+      title: "a",
       completed: false,
     }),
   );
